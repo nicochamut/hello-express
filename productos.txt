@@ -1,0 +1,3 @@
+[{"nombre":"picture","precio":"15","thumbnail":"hhhhhh","id":1},
+{"nombre":"notebook","precio":"200","thumbnail":"hhhhhh","id":2},
+{"nombre":"t-shirt","precio":"50","thumbnail":"hhhhhh","id":3}]
