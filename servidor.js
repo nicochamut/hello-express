@@ -12,9 +12,13 @@ server.on("error", (error) => {
   console.log(`epa, ${error}`);
 });
 
+app.get("/", (req, res) => {
+  res.send(
+    '"/productos" para ver todos los products /n "/productosRandom" para ver uno al azar.'
+  );
+});
 app.get("/productos", async (req, res) => {
   const p = await products.getAll();
-  console.log(p);
   res.send(p);
 });
 
