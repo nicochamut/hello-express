@@ -1,8 +1,8 @@
-const http = require("http");
-const moment = require("moment");
+
 const express = require("express");
 const app = express();
 const products = require("./contenedor.js");
+
 
 const server = app.listen(8080, () => {
   console.log(`server escuchando en puerto ${server.address().port}`);
@@ -12,9 +12,10 @@ server.on("error", (error) => {
   console.log(`epa, ${error}`);
 });
 
+
 app.get("/", (req, res) => {
   res.send(
-    '"/productos" para ver todos los products /n "/productosRandom" para ver uno al azar.'
+    '<body style="background: black; display: flex; justify-content: center; align-items: center"> <h1 style="color: #23d997">"/productos" para ver todos los productos. <br> "/productosRandom" para ver uno al azar.</h1></body>'
   );
 });
 app.get("/productos", async (req, res) => {
